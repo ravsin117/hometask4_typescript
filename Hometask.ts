@@ -35,4 +35,9 @@ mycart.addPizza();
 mycart.addPizza();
 mycart.addPizza();
 console.log(mycart.pizzaCount)
-
+mycart.removePizza();
+mycart.removePizza();
+mycart.removePizza();
+mycart.removePizza();
+console.log(mycart.pizzaCount);
+mycart.removePizza();

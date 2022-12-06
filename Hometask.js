@@ -1,11 +1,10 @@
 var pizza;
 (function (pizza) {
-    pizza[pizza["pizzaCount"] = 0] = "pizzaCount";
+    pizza[pizza["pizzaCount"] = 0] = "pizzaCount"; // initially all pizza count should be 0 
 })(pizza || (pizza = {}));
 var Cart = /** @class */ (function () {
     function Cart(name) {
         this.userId = Math.floor(Math.random() * 9999);
-        this.userName = '';
         this.userName = name;
         this.pizzaCount = pizza.pizzaCount;
     }
@@ -30,3 +29,9 @@ mycart.addPizza();
 mycart.addPizza();
 mycart.addPizza();
 console.log(mycart.pizzaCount);
+mycart.removePizza();
+mycart.removePizza();
+mycart.removePizza();
+mycart.removePizza();
+console.log(mycart.pizzaCount);
+mycart.removePizza();
