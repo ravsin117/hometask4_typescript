@@ -1,5 +1,5 @@
 enum pizza{
-    pizzaCount = 0
+    pizzaCount = 0 // initially all pizza count should be 0 
 }
 interface User{
     userName:string,
@@ -12,7 +12,7 @@ class Cart implements User{
     userName:string;
     constructor(name:string){
         this.userName = name;
-        this.pizzaCount =pizza.pizzaCount;
+        this.pizzaCount = pizza.pizzaCount;
     }
     addPizza():void{
         this.pizzaCount++;
